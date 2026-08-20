@@ -31,5 +31,11 @@ jobs:
           playwright install --with-deps chromium
 
       - name: Run Pytest
+        env:
+          APP_URL: ${{ vars.APP_URL }}
+          APP_USERNAME: ${{ secrets.APP_USERNAME }}
+          APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
+          HEADLESS: ${{ vars.HEADLESS }}
+          SLOW_MO: ${{ vars.SLOW_MO }}
         run: |
           pytest -v
