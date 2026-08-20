@@ -38,4 +38,4 @@ jobs:
           HEADLESS: ${{ vars.HEADLESS }}
           SLOW_MO: ${{ vars.SLOW_MO }}
         run: |
-          pytest -v
+          pytest -v --html=reports/pytest-report.html --self-contained-html
