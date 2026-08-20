@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+
+# Pytest
+.pytest_cache/
+
+# Playwright
+screenshots/
+videos/
+traces/
+
+# Test reports
+reports/
+allure-results/
+allure-report/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+auth/auth.json
+config/config.ini
