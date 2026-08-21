@@ -2,7 +2,6 @@ import pytest
 from playwright.sync_api import expect
 
 from utils.configreader import ConfigReader
-from utils.excelreader import ExcelReader
 from utils.logger import Logger
 from utils.screenshot import ScreenshotUtil
 from pages.loginpage import LoginPage
@@ -50,17 +49,6 @@ def test_delete_user(logged_in_page):
     
     
 
-# def create_user(page):
-#     admin = AdminPage(page)
-#     users = ExcelReader.get_user_data("userdata.xlsx")
-#     for user in users:
-#         admin.add_button()
-#         admin.add_user(user["role"],
-#             user["status"],
-#             user["employee_name"],
-#             user["username"],
-#             user["password"])
-#     ScreenshotUtil.capture(page,f"user created :{user["username"]}")
 
 
     
